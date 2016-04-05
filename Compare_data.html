@@ -87,11 +87,11 @@ d3.csv("compare.csv", function(error, data) {
       .attr("class", "y axis")
       .call(yAxis)
     .append("text")
-      .attr("transform", "rotate(90)")
+      .attr("transform", "rotate(360)")
       .attr("y", -6)
-      .attr("dy", "-.1em")
+      .attr("dy", ".4em")
       .style("text-anchor", "end")
-      .text(" Score");
+      .text(" score");
 
   var state = svg.selectAll(".state")
       .data(data)
